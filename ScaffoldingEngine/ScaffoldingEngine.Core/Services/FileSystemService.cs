@@ -2,7 +2,7 @@
 
 namespace ScaffoldingEngine.Core.Services
 {
-    internal class FileSystemService : IFileSystemService
+    public class FileSystemService : IFileSystemService
     {
         public void CreateDirectory(string path)
         {

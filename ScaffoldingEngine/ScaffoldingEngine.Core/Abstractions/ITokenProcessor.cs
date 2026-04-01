@@ -1,6 +1,6 @@
 ﻿namespace ScaffoldingEngine.Core.Abstractions
 {
-    internal interface ITokenProcessor
+    public interface ITokenProcessor
     {
         string Process(string content, string featureName);
     }

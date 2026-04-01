@@ -3,13 +3,13 @@ using ScaffoldingEngine.Core.Models;
 
 namespace ScaffoldingEngine.Core.Services
 {
-    internal class ScaffoldingEngine : IScaffoldingEngine
+    public class ScaffoldingEngineFeature : IScaffoldingEngineFeature
     {
         private readonly ITemplateProvider _templateProvider;
         private readonly ITokenProcessor _tokenProcessor;
         private readonly IFileSystemService _fileSystem;
 
-        public ScaffoldingEngine(
+        public ScaffoldingEngineFeature(
             ITemplateProvider templateProvider,
             ITokenProcessor tokenProcessor,
             IFileSystemService fileSystem)

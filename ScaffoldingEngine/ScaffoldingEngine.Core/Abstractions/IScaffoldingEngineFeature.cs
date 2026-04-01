@@ -2,7 +2,7 @@
 
 namespace ScaffoldingEngine.Core.Abstractions
 {
-    internal interface IScaffoldingEngine
+    public interface IScaffoldingEngineFeature
     {
         void GenerateFeature(FeatureRequest request);
     }

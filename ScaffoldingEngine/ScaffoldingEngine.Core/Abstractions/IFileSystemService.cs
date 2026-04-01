@@ -1,6 +1,6 @@
 ﻿namespace ScaffoldingEngine.Core.Abstractions
 {
-    internal interface IFileSystemService
+    public interface IFileSystemService
     {
         void CreateDirectory(string path);
         void WriteFile(string path, string content);

@@ -2,7 +2,7 @@
 
 namespace ScaffoldingEngine.Core.Services
 {
-    internal class TemplateProvider : ITemplateProvider
+    public class TemplateProvider : ITemplateProvider
     {
         public string GetTemplateRootPath(string templateName)
         {

@@ -1,6 +1,6 @@
 ﻿namespace ScaffoldingEngine.Core.Abstractions
 {
-    internal interface ITemplateProvider
+    public interface ITemplateProvider
     {
         string GetTemplateRootPath(string templateName);
     }

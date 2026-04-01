@@ -1,6 +1,6 @@
 ﻿using ScaffoldingEngine.Core.Abstractions;
 
-internal class TokenProcessor : ITokenProcessor
+public class TokenProcessor : ITokenProcessor
 {
     public string Process(string content, string featureName)
     {
