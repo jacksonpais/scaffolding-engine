@@ -5,3 +5,5 @@
 /ScaffoldingEngine/.vs/ScaffoldingEngine
 /ScaffoldingEngine/ScaffoldingEngine.Core/bin/Debug/net8.0
 /ScaffoldingEngine/ScaffoldingEngine.Core/obj
+/ScaffoldingEngine/ScaffoldingEngine.CLI/bin/Debug/net8.0
+/ScaffoldingEngine/ScaffoldingEngine.CLI/obj
