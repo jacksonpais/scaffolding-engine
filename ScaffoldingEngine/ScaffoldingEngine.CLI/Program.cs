@@ -13,6 +13,7 @@ public class Program
         };
 
         rootCommand.Subcommands.Add(AddFeatureCommand.Build());
+        rootCommand.Subcommands.Add(AddSolutionCommand.Build());
 
         var result = await rootCommand.Parse(args).InvokeAsync();
 

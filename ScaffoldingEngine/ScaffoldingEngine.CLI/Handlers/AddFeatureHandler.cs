@@ -1,4 +1,5 @@
-﻿using ScaffoldingEngine.Core.Abstractions;
+﻿using ScaffoldingEngine.CLI.Validation;
+using ScaffoldingEngine.Core.Abstractions;
 using ScaffoldingEngine.Core.Models;
 using ScaffoldingEngine.Core.Services;
 
@@ -10,14 +11,7 @@ namespace ScaffoldingEngine.CLI.Handlers
         {
             try
             {
-                Console.WriteLine($"Creating feature: {featureName}");
-                Console.WriteLine($"Target path: {path}");
-
-                if (!Directory.Exists(path))
-                {
-                    Console.WriteLine("❌ Target path does not exist.");
-                    return;
-                }
+                CliValidator.ValidateFeature(featureName, path);
 
                 IScaffoldingEngineFeature engine = new ScaffoldingEngineFeature(
                     new TemplateProvider(),
@@ -35,8 +29,9 @@ namespace ScaffoldingEngine.CLI.Handlers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Error:");
-                Console.WriteLine(ex.Message);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"❌ {ex.Message}");
+                Console.ResetColor();
             }
 
             await Task.CompletedTask;
