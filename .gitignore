@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/ScaffoldingEngine/.vs/ScaffoldingEngine
-/ScaffoldingEngine/ScaffoldingEngine.Core/bin/Debug/net8.0
+/ScaffoldingEngine/.vs
+/ScaffoldingEngine/ScaffoldingEngine.Core/bin
 /ScaffoldingEngine/ScaffoldingEngine.Core/obj
-/ScaffoldingEngine/ScaffoldingEngine.CLI/bin/Debug/net8.0
+/ScaffoldingEngine/ScaffoldingEngine.CLI/bin
 /ScaffoldingEngine/ScaffoldingEngine.CLI/obj
